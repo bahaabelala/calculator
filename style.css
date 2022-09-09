@@ -1,0 +1,120 @@
+@charset "UTF-8";
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+#calculator-body {
+    width: 35%;
+    height: auto;
+    border-left: solid 2px #9b9b9b;
+    border-right: solid 2px #9b9b9b;
+    margin: 0 auto;
+    border-radius: 15px;
+}
+
+#header {
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    background-color: #cdcdcd;
+    font-weight: bold;
+    font-size: 20pt;
+    border-radius: 15px 15px 0 0;
+}
+
+#calculations {
+    width: 80%;
+    padding: 20px;
+    border-right: solid 1px #9b9b9b;
+}
+
+#operator {
+    width: 20%;
+    padding: 20px;
+    text-align: center;
+}
+
+input {
+    border: none;
+    outline: none;
+    margin: 0;
+    width: 100%;
+    background-color: #f1f1f1;
+    padding: 20px 20px;
+    font-size: 25pt;
+    font-weight: bold;
+    text-align: center;
+}
+
+ul {
+    border: none;
+    width: 100%;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #e7e7e7;
+    padding: 10px 10px;
+    margin: 0;
+    border-radius: 0 0 15px 15px;
+}
+
+li {
+    margin: 8px 5px;
+    padding: 10px 0;
+    text-align: center;
+    background-color: #2f2f2f;
+    color: #ffffff;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 20pt;
+    width: calc(25% - 10px);
+    transition: 0.4s ease-in-out all;
+}
+
+#divide,
+#times,
+#minus,
+#plus,
+#equals {
+    background-color: black;
+}
+#divide {
+    color: #e0e0d1;
+}
+#times {
+    color: #76c2af;
+}
+#minus {
+    color: #e0995e;
+}
+#plus {
+    color: #f5cf87;
+}
+#equals {
+    color: #979fad;
+}
+#divide:hover,
+#times:hover,
+#minus:hover,
+#plus:hover,
+#equals:hover {
+    background-color: #e7e7e7;
+    color: #7d007d;
+}
+
+li:hover {
+    background-color: #e7e7e7;
+    color: #000000;
+    cursor: pointer;
+}
+
+@media (max-width: 1080px) and (max-height: 2340px) {
+    #calculator-body {
+        transform: scale(2.5) translateY(200px);
+    }
+}
