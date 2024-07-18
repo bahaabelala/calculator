@@ -115,6 +115,6 @@ li:hover {
 
 @media (max-width: 1080px) and (max-height: 2340px) {
     #calculator-body {
-        transform: scale(2.5) translateY(200px);
+        width: 95%;
     }
 }
